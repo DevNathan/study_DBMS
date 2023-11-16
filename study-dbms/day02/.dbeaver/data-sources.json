@@ -1,0 +1,57 @@
+{
+	"folders": {},
+	"connections": {
+		"oracle_thin-1892ab1818a-74480c77ea7b6de2": {
+			"provider": "oracle",
+			"driver": "oracle_thin",
+			"name": "XE",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"host": "localhost",
+				"port": "1521",
+				"database": "XE",
+				"url": "jdbc:oracle:thin:@//localhost:1521/XE",
+				"home": "C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server",
+				"type": "dev",
+				"provider-properties": {
+					"show-only-one-schema@": "false",
+					"@dbeaver-check-schema-content@": "false",
+					"@dbeaver-always-show-dba@": "false",
+					"@dbeaver-always-use-dba-views@": "false",
+					"@dbeaver-meta-use-sys-schema@": "false",
+					"@dbeaver-meta-use-simple-constraints@": "false",
+					"@dbeaver-use-rule-hint@": "false",
+					"@dbeaver-use-meta-optimizer@": "false",
+					"@dbeaver-meta-use-alternative-table-query@": "false",
+					"oracle.meta-search-in-synonyms": "false",
+					"@dbeaver-connection-type@": "BASIC",
+					"@dbeaver-sid-service@": "SERVICE"
+				},
+				"auth-model": "oracle_native"
+			}
+		}
+	},
+	"virtual-models": {
+		"oracle_thin-1892ab1818a-74480c77ea7b6de2": {
+			"SCOTT": {
+				"@properties": {
+					"erd.diagram.state": {
+						"serialized": "<diagram version=\"1\" name=\"empty\" time=\"202307121452\"><entities><data-source id=\"oracle_thin-1892ab1818a-74480c77ea7b6de2\"><entity id=\"1\" name=\"TBL_CARD_INFO\" fq-name=\"SCOTT.TBL_CARD_INFO\" order=\"0\" x=\"649\" y=\"435\"><path name=\"SCOTT\"/></entity><entity id=\"2\" name=\"TBL_COMMENT_TABLE\" fq-name=\"SCOTT.TBL_COMMENT_TABLE\" order=\"1\" x=\"201\" y=\"291\"><path name=\"SCOTT\"/></entity><entity id=\"3\" name=\"TBL_COMPANY_INFO\" fq-name=\"SCOTT.TBL_COMPANY_INFO\" order=\"4\" x=\"366\" y=\"123\"><path name=\"SCOTT\"/></entity><entity id=\"4\" name=\"TBL_PAYMENT\" fq-name=\"SCOTT.TBL_PAYMENT\" order=\"5\" x=\"530\" y=\"281\"><path name=\"SCOTT\"/></entity><entity id=\"5\" name=\"TBL_POST\" fq-name=\"SCOTT.TBL_POST\" order=\"2\" x=\"14\" y=\"419\"><path name=\"SCOTT\"/></entity><entity id=\"6\" name=\"TBL_PRODUCT_INFO\" fq-name=\"SCOTT.TBL_PRODUCT_INFO\" order=\"6\" x=\"648\" y=\"102\"><path name=\"SCOTT\"/></entity><entity id=\"7\" name=\"TBL_USER\" fq-name=\"SCOTT.TBL_USER\" order=\"3\" x=\"32\" y=\"122\"><path name=\"SCOTT\"/></entity><entity id=\"8\" name=\"TBL_USER_INFO\" fq-name=\"SCOTT.TBL_USER_INFO\" order=\"7\" x=\"401\" y=\"442\"><path name=\"SCOTT\"/></entity></data-source></entities><relations><relation name=\"FK_PAYMENT_CARD\" fq-name=\"SCOTT.TBL_PAYMENT.FK_PAYMENT_CARD\" type=\"fk\" pk-ref=\"1\" fk-ref=\"4\"/><relation name=\"FK_PAYMENT_COMPANY\" fq-name=\"SCOTT.TBL_PAYMENT.FK_PAYMENT_COMPANY\" type=\"fk\" pk-ref=\"3\" fk-ref=\"4\"/><relation name=\"FK_PRODUCT_COMPANY\" fq-name=\"SCOTT.TBL_PRODUCT_INFO.FK_PRODUCT_COMPANY\" type=\"fk\" pk-ref=\"3\" fk-ref=\"6\"/><relation name=\"FK_COMMENT_POST\" fq-name=\"SCOTT.TBL_COMMENT_TABLE.FK_COMMENT_POST\" type=\"fk\" pk-ref=\"5\" fk-ref=\"2\"/><relation name=\"FK_PAYMENT_PRODUCT\" fq-name=\"SCOTT.TBL_PAYMENT.FK_PAYMENT_PRODUCT\" type=\"fk\" pk-ref=\"6\" fk-ref=\"4\"/><relation name=\"FK_COMMENT_USER\" fq-name=\"SCOTT.TBL_COMMENT_TABLE.FK_COMMENT_USER\" type=\"fk\" pk-ref=\"7\" fk-ref=\"2\"/><relation name=\"FK_POST_USER\" fq-name=\"SCOTT.TBL_POST.FK_POST_USER\" type=\"fk\" pk-ref=\"7\" fk-ref=\"5\"/><relation name=\"FK_CARD_USER\" fq-name=\"SCOTT.TBL_CARD_INFO.FK_CARD_USER\" type=\"fk\" pk-ref=\"8\" fk-ref=\"1\"/><relation name=\"FK_PAYMENT_USER\" fq-name=\"SCOTT.TBL_PAYMENT.FK_PAYMENT_USER\" type=\"fk\" pk-ref=\"8\" fk-ref=\"4\"/></relations></diagram>"
+					}
+				}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"auto-close-transactions": false
+		}
+	}
+}

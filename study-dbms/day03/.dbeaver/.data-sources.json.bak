@@ -1,0 +1,59 @@
+{
+	"folders": {},
+	"connections": {
+		"oracle_thin-18949884d4d-7fa677a004da0610": {
+			"provider": "oracle",
+			"driver": "oracle_thin",
+			"name": "XE",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"host": "localhost",
+				"port": "1521",
+				"database": "XE",
+				"url": "jdbc:oracle:thin:@//localhost:1521/XE",
+				"home": "C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server",
+				"type": "dev",
+				"provider-properties": {
+					"show-only-one-schema@": "false",
+					"@dbeaver-check-schema-content@": "false",
+					"@dbeaver-always-show-dba@": "false",
+					"@dbeaver-always-use-dba-views@": "false",
+					"@dbeaver-meta-use-sys-schema@": "false",
+					"@dbeaver-meta-use-simple-constraints@": "false",
+					"@dbeaver-use-rule-hint@": "false",
+					"@dbeaver-use-meta-optimizer@": "false",
+					"@dbeaver-meta-use-alternative-table-query@": "false",
+					"oracle.meta-search-in-synonyms": "false",
+					"@dbeaver-connection-type@": "BASIC",
+					"@dbeaver-sid-service@": "SERVICE"
+				},
+				"auth-model": "oracle_native"
+			}
+		}
+	},
+	"virtual-models": {
+		"oracle_thin-18949884d4d-7fa677a004da0610": {
+			"SCOTT": {
+				":TBL_MEMBER": {
+					"properties": {
+						"erd.diagram.state": {
+							"serialized": "<diagram version=\"1\" name=\"empty\" time=\"202307131911\"><entities><data-source id=\"oracle_thin-18949884d4d-7fa677a004da0610\"><entity id=\"1\" name=\"TBL_MEMBER\" fq-name=\"SCOTT.TBL_MEMBER\" order=\"0\" color-bg=\"128,64,32\" x=\"189\" y=\"20\"><path name=\"SCOTT\"/></entity><entity id=\"2\" name=\"TBL_DEPARTMENT\" fq-name=\"SCOTT.TBL_DEPARTMENT\" order=\"1\" x=\"355\" y=\"20\"><path name=\"SCOTT\"/></entity><entity id=\"3\" name=\"TBL_PROJECT\" fq-name=\"SCOTT.TBL_PROJECT\" order=\"2\" x=\"20\" y=\"20\"><path name=\"SCOTT\"/></entity></data-source></entities><relations><relation name=\"RK_PROJECT_MEMBER\" fq-name=\"SCOTT.TBL_PROJECT.RK_PROJECT_MEMBER\" type=\"fk\" pk-ref=\"1\" fk-ref=\"3\"/><relation name=\"RK_MEMBER_DEPARTMENT\" fq-name=\"SCOTT.TBL_MEMBER.RK_MEMBER_DEPARTMENT\" type=\"fk\" pk-ref=\"2\" fk-ref=\"1\"/></relations></diagram>"
+						}
+					}
+				}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"auto-close-transactions": false
+		}
+	}
+}
