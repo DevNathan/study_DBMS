@@ -8,8 +8,9 @@
 1. [DBMS 개론](#1-DBMS-개론)
 2. [SQL문](#2-sql문query-문---ddl-dml-dcl-tcl)
 	> 2-1 [DDL](#2-1-DDL)<br>
-	> 2-2 [DML](#2-2-DML)
-
+	> 2-2 [DML](#2-2-DML)<br>
+	> 2-2 [DCL](#2-3-DCL)<br>
+	> 2-2 [TCL](#2-4-TCL)
 ***
 ## 1. DBMS 개론
 ### DB(Database)
